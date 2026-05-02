@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  color: white;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* COUNTDOWN */
+.countdown {
+  text-align: center;
+  color: white;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* SEARCH */
+.search {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/* GRID */
+.list-siswa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* CARD */
+.siswa-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 14px;
+  text-align: center;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: 0.2s;
+}
+
+.siswa-card:hover {
+  transform: scale(1.05);
+}
+
+.siswa-card:active {
+  transform: scale(0.95);
+}
+
+.siswa-card img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.siswa-card p {
+  color: white;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* CARD LOGIN */
+.card {
+  max-width: 350px;
+  margin: auto;
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  font-size: 16px;
+}
+
+/* LOADING */
+.loading-container {
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255,255,255,0.2);
+  border-top: 5px solid #00c6ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  color: white;
+}
+
+/* RESULT */
+#hasil {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .list-siswa {
+    grid-template-columns: 1fr;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+  font-size: 12px;
+  margin-top: 40px;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  letter-spacing: 0.5px;
+}
